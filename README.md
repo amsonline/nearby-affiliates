@@ -1,3 +1,28 @@
+## Nearby Affiliates
+This is as simple piece of code which gets a list of affiliates from an input file and calculates the affiliates which are living within 100KM of office location. The code uses [the Great Circle Distance formula](https://en.wikipedia.org/wiki/Great-circle_distance) to calculate the distance between two points.
+
+The input file is located at `storage/app` directory. The project uses an interface to get the results. The interface s binded to `AffiliateData.php` service, which reads the data from the file, through a service provider.
+
+#### Start the project
+
+To start the project, simply clone this repository and run
+
+`composer update`
+
+And run the following command in the following:
+
+`php artisan serve`
+
+And open
+
+`http://localhost:8000`
+
+In your browser to view the result page (Don't blame me, I am not stylish in designing web pages at all xD).
+
+All distances inside the project are in Meters.
+
+---
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
