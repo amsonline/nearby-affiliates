@@ -1,0 +1,65 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    background: #1d2b3b;
+    padding-top: 100px;
+    font-size: 18px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.pane {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.pane .header {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 15px;
+    background-color: white;
+    margin-bottom: 1px;
+}
+
+.pane .list-title {
+    text-align: center;
+    background: white;
+    padding: 5px;
+}
+
+.pane .list-content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pane .list-content-wrapper .list-content {
+    display: flex;
+}
+
+.pane .list-content-wrapper > div {
+    flex: 1;
+    text-align: center;
+    background: white;
+    margin: 1px;
+    padding: 20px;
+}
+
+.pane .list-content-wrapper > div:nth-child(-n+4) {
+    font-weight: bold;
+    background-color: #1976d2;
+    color: white;
+}
+
+.pane .list-content-wrapper .invitee-id {
+    min-width: 148px;
+    max-width: 148px;
+    width: 148px;
+}
+
+.pane .list-content-wrapper .invitee-name {
+    min-width: 348px;
+    max-width: 348px;
+    width: 348px;
+}
