@@ -27,7 +27,7 @@ class Affiliates {
 		return ($distance <= 100000);
 	}
 	
-	private function getGreatCircleDistance($latitude, $longitude) {
+	public function getGreatCircleDistance($latitude, $longitude) {
 		$latitude = deg2rad($latitude);
 		$longitude = deg2rad($longitude);
 		$corporationLatitude = deg2rad(53.3340285);
