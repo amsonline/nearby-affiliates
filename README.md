@@ -3,7 +3,7 @@ This is as simple piece of code which gets a list of affiliates from an input fi
 
 The input file is located at `storage/app` directory. The project uses an interface to get the results. The interface s binded to `AffiliateData.php` service, which reads the data from the file, through a service provider.
 
-#### Start the project
+### Start the project
 
 To start the project, simply clone this repository and run
 
@@ -19,7 +19,14 @@ And open
 
 In your browser to view the result page (Don't blame me, I am not stylish in designing web pages at all xD).
 
+To test the project, simply execute `php artisan test`.
+
 All distances inside the project are in Meters.
+
+### Improvements
+Error handling can be added to the methods in service classes. This is not added because right now, only processing the given text file without any alterations was desired.
+
+In addition, we can add an API endpoint to receive the input file and output the nearby affiliates. After applying this improvement, we can add a new feature test to test the API.
 
 ---
 
